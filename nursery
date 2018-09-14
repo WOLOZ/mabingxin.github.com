@@ -1,0 +1,16 @@
+public class nursery
+{
+  public static void main (String args[])
+  {
+   for(int i=0;i<99;i++)
+    {
+      int n = 99 - i;
+     if(i==98)
+      System.out.println("1 boottle of beer on the wall ,1 bottle of beer.Take one down.Pass it around.No more bottles of beer on the wall");
+      else if(i==97)
+       System.out.println("2 boottles of beer on the wall ,2 bottles of beer.Take one down.Pass it around.1 bottles of beer on wall.");
+       else 
+        System.out.println(n+" boottles of beer on the wall ,"+n+" bottles of beer.Take one down.Pass it around."+(n - 1)+" bottles of beer on wall.");
+      }
+   }
+}
