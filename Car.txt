@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Car {
+	public String name;
+	public String tank;
+	public double oilConsumption;
+	public Car(){
+		//无参构造函数，为成员变量赋默认值
+		name = "BMW";
+		tank = "sh";
+		oilConsumption = 21.1;
+	}
+	public boolean gas(){
+		//成员函数gas
+		return true;
+	}
+	public boolean run(){
+		//成员函数run
+		return true;
+	}
+	public static void main(String args[]){
+		Car c1 = new Car();
+		System.out.println("汽车型号："+c1.name+" 汽车油箱："+c1.tank+" 汽车油耗："+c1.oilConsumption);//输出成员变量默认值
+		System.out.println("请依次输入汽车型号，油箱和油耗：");
+		Scanner scanner = new Scanner(System.in);
+		String c1n = scanner.next();                                                        
+		String c1t = scanner.next();
+		double c1o = scanner.nextDouble();
+		c1.name = c1n;                                                                      //修改成员变量值                                  
+		c1.tank = c1t;
+		c1.oilConsumption = c1o;
+		System.out.println("汽车型号："+c1.name+" 汽车油箱："+c1.tank+" 汽车油耗："+c1.oilConsumption);
+		
+
+		
+	}
+
+}
